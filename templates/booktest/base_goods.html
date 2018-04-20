@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content1 %}
+
+    <table border="1">
+
+    <tr>
+        <td height="300">用户导航</td>
+        <td>{% block user_content %} {% endblock %}</td>
+    </tr>
+
+    </table>
+{% endblock content1 %}
+</body>
+</html>

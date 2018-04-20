@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'booktest:show' '123'%}">展示</a>
+<hr>
+<ul>
+    {% for hero in list %}
+    <li>{{ forloop.counter }}{{ hero.showname }}</li>
+    {% empty %}
+        <li>啥也没找到</li>
+{% endfor %}
+</ul>
+{#{{ hero.showname }}#}
+
+<br />
+<b>{{ Max1 }}</b>
+
+
+</body>
+</html>
